@@ -2,16 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-hardcoded-module',
+  selector: 'app-eagerly-loaded-standalone',
+  standalone: true,
+  imports: [],
   template: `
     <p>
-      hardcoded-module works!
+      eagerly-loaded-standalone works!
       <button (click)="sendRequest()">Send request</button>
     </p>
   `,
   styles: ``,
 })
-export class HardcodedModuleComponent {
+export class EagerlyLoadedStandaloneComponent {
   constructor(private httpClient: HttpClient) {}
 
   sendRequest() {

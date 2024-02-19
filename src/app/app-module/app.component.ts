@@ -10,7 +10,17 @@ import { Component } from '@angular/core';
     <app-lazy-loaded-component />
     } @placeholder {
     <div>Click me to load component.</div>
-    } `,
+    }
+
+    <ul>
+      <li routerLink="/eagerly-loaded-module">Eagerly loaded module</li>
+      <li routerLink="/eagerly-loaded-standalone">Eagerly loaded standalone</li>
+      <li routerLink="/lazyloaded-module">Lazy loaded module</li>
+      <li routerLink="/lazyloaded-standalone">Lazy loaded standalone</li>
+    </ul>
+
+    <p>Router outlet:</p>
+    <router-outlet />`,
   styles: ``,
 })
 export class AppComponent {
